@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Code.Controllers.MainController">
+    <children>
+        <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#getHistory" text="View Task List" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addTaskPage" text="Add new task" />
+                  <MenuItem mnemonicParsing="false" onAction="#addCategoryPage" text="Add new category" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Line id="line_h" disable="true" />
+        <Line id="line_v" disable="true" />
+        <Line id="arrow_h_below" disable="true" />
+        <Line id="arrow_h_up" disable="true" endX="-1.52587890625E-5" endY="-1.52587890625E-5" />
+        <Line id="arrow_v_right" disable="true" />
+        <Line id="arrow_v_left" disable="true" />
+        <Rectangle id="top_right" disable="true" />
+        <Rectangle id="below_left" disable="true" />
+        <Rectangle id="top_left" disable="true" />
+        <Rectangle id="below_right" disable="true" />
+      <Label layoutX="591.0" layoutY="204.0" text="URGENCE" />
+      <Label layoutX="290.0" layoutY="98.0" rotate="-90.0" text="IMPORTANCE" />
+      <Line endX="335.2928771972656" endY="400.0000305175781" startX="335.2928771972656" startY="25.0" />
+      <Line endX="1.5" endY="194.29287719726562" startX="654.0000610351562" startY="194.29287719726562" />
+      <Text layoutX="336.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 0" wrappingWidth="30.13671875" />
+      <Text layoutX="617.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="max" />
+      <Text layoutX="340.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="max" wrappingWidth="30.13671875" />
+
+    </children>
+</AnchorPane>
